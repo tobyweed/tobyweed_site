@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toby Weed</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Source+Sans+Pro:200,300,400" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        function scrollLinks(){
+            $("a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                }
+          });
+          
+          var topNav = $(".navbar-fixed-top"),
+              topNavHeight = topNav.outerHeight()+15
+              
+          $(window).scroll(function(){
+            // Get container scroll position
+            var fromTop = $(window).scrollTop()+topNavHeight,
+            navItems = topNav.find("a"),
+            about = $("#about").offset().top,
+            projects = $("#projects").offset().top,
+            essays = $("#essays").offset().top;
+              
+            if(fromTop <= about){
+                $(navItems).addClass("active");
+            } else if(fromTop >= about) {
+                $(navItems).removeClass("active");
+                if(fromTop >= about && fromTop <= projects) {
+                    $('a[href="#about"]').addClass("active");
+                } else if (fromTop >= projects && fromTop <= essays) {
+                    $('a[href="#projects"]').addClass("active");
+                } else if (fromTop >= essays && fromTop <= essays + 500) {
+                    $('a[href="#essays"]').addClass("active");
+                } else {
+                    $('a[href="#contact"]').addClass("active");
+                }
+            }
+          });
+          
+          
+          $(".nav-item").hover(function(){
+              if($(window).scrollTop()+topNavHeight <= $("#about").offset().top){
+                  $(".nav-item").toggleClass("active");
+              }
+          })
+        }
+    </script>
+</head>
+<body onLoad="scrollLinks()">
+    
+        <nav class="navbar navbar-fixed-top navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#landing">Toby Weed</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about" class="nav-item">About</a></li>
+                        <li><a href="#projects" class="nav-item">Projects</a></li>
+                        <li><a href="#essays" class="nav-item">Essays</a></li>
+                        <li><a href="#contact" class="nav-item">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
