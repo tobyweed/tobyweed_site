@@ -43,8 +43,8 @@ body h5 {
     width: 130px;
     height: 40px;
     background-color: rgba(0,0,0,0);
-    border: solid white 1px;
-    color: white;
+    border: solid black 1px;
+    color: black;
     border-radius: 0;
     padding-top: 9px;
     margin: 10px;
@@ -54,12 +54,12 @@ body h5 {
 }
 
 .button:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .button:focus {
-    color: inherit;
+    color: black;
 }
 
 h1{
@@ -71,33 +71,46 @@ h1{
     height: 100%;
     top:0;
     background-image: url("/car.JPG");
-    background-position: 50% 74%;
+    background-position: 50% 77.4%;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #landing .content {
-    padding-top: 253px;
+    height: 100vh;
+    position:relative;
 }
 
 #landing .content h1 {
+    padding-top: 250px;
     font-size: 3.9em;
 }
 
 #landing .content h5 {
-    font-size: 1.4em;
-    color:rgba(255,255,255,.7);
+    font-size: 1.2em;
+    /*color:rgba(255,255,255,.7);*/
 }
 
-#landing .circular {
+#landing .circular:hover  {
+    background-color: white;
+    color: rgba(0,0,0,0);
+}
+
+#landing .circular:link, .circular:visited{
+    position: absolute;
+    bottom: 0;
+    
     border-radius:50%;
     height: 50px;
     width: 50px;
     display:inline-block;
     padding-top: 13.5px;
     font-size: 1.3em;
-    margin-top: 140px;
-    border: solid white 1.7px;
+    margin: 0 0 13vh -1.9%;
+    
+    
+    color: white;
+    border: solid white 1px;
 }
 
 
@@ -105,7 +118,10 @@ h1{
 
 #about {
     text-align: center;
-    color: white;
+    color: black;
+    background-color: rgba(246,246,246,.95);
+    padding-bottom: 63px;
+    padding-top: 90px;
 }
 
 #about .content {
@@ -122,7 +138,7 @@ h1{
 
 #portrait {
     border-radius:50%;
-    border: solid white 1px;
+    border: solid black 1px;
     height: 170px;
     width: 170px;
     background-clip: padding-box;
@@ -133,12 +149,13 @@ h1{
     margin-bottom: 20px;
 }
 
-/* /ABOUT PAGE */
+#about hr {
+    border: solid black .7px;
+}
 
-#about .about-id-box {
-    border-right: solid white 1px;
-    border-bottom: solid white 1px;
-    height: 350px;
+#about h1 {
+    font-weight: 400;
+    /*font-family: 'Avenir', sans-serif;*/
 }
 
 #about h5 {
@@ -158,15 +175,12 @@ h1{
     margin: 0;
 }
 
-
-/* LANDING #ABOUT */
-
-#about .landing-id-box {
-    border-right: solid white 1px;
+#about .id-box {
+    border-right: solid black 1px;
 }
 
-#about .landing-about-content {
-    margin-top: 60px;
+#about .about-content {
+    margin-top: 30px;
     display: inline-block;
 }
 
@@ -177,8 +191,59 @@ h1{
     width: 700px;
     margin: 0 auto;
     
-    color:rgba(255,255,255,.7);
+    /*color:rgba(255,255,255,.7);*/
     line-height: 1.6;
+}
+
+#about #bio-text {
+    display: none;
+}
+
+#about #values-text {
+    display: none;
+}
+
+#about .about-text {
+    margin-left: 200px;
+}
+
+/*============================================== contact =================================================*/
+
+#contactme {
+    height:700px;
+    background-color: rgba(190,190,190,.95);
+    text-align: left;
+    padding-top:80px;
+}
+
+#contactme h1{
+    font-size: 2.8em;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#contactme hr {
+    width: 76vw;
+    margin-left:0;
+    border: solid rgba(100,100,100,.6) .7px;
+}
+
+#contactme .contactme-content {
+    float: left;
+}
+
+#contactme div {
+    float: left;
+}
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left bottom;
+	width: 90%;
+	border-top: solid rgba(100,100,100,.6) 1.1px;
+	color: black;
+	
+	font-family: "avenir", sans-serif;
 }
 
 /*============================================== THUMBNAIL GALLERIES =================================================*/
@@ -234,17 +299,23 @@ h1{
     font-size: .85em;
 }
 
-/*========================================================== SUBS ==========================================================*/
+/*============================================== SUBS & DIVIDERS ====================================================*/
 
 .sub{
-    color: white;
+    color: black;
     font-weight: 200;
     text-align: center;
-    margin-top: 300px;
+    /*margin-top: 70px;*/
 }
 
 .sub h1 {
     padding-top: 35px;
+}
+
+.divider {
+    height: 200px;
+    background-image: url("/car.JPG");
+    background-position: 50% 74%;
 }
 
 
@@ -254,6 +325,10 @@ h1{
     text-align: center;
     color: rgba(210,210,210,.87);
     margin-top: 80px;
+}
+
+#contact hr {
+    margin-top: 0;
 }
 
 a {
@@ -285,40 +360,82 @@ a:hover{
 /*======================================================== NAVBAR ========================================================*/
 
 .navbar {
-    background: rgba(0,0,0,.5); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.3), rgba(255,255,255,0));
-    background: -o-linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.3), rgba(255,255,255,0));
-    background: -moz-linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.3), rgba(255,255,255,0));
-    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.3), rgba(255,255,255,0));
+    -webkit-transition: background-color .5s, font-size .5s; /* Safari */
+    transition: background-color .5s, font-size .5s;
+    
+    z-index: 1000;
+    
+    text-align: center;
+    width: 100%;
+}
+
+#spacer {
     border: none;
+    margin: 0;
+    padding-top: .1vh;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: rgba(180,180,180,.8);
-    -webkit-transition:color .3s;
-    transition: color .3s;
+#switch {
+    border: none;
+    margin: 0;
 }
 
-.navbar-default .navbar-nav>li>a.active {
-    color: white;
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  
+  background-color: rgba(20,20,20,.9);
 }
 
-.navbar-default .navbar-nav:hover>li>a {
-    color: #8A8A8A;
+#nav-list {
+    padding: 39px 0 30px 0;
 }
 
-.navbar-default .navbar-nav:hover>li>a.active {
-    color: white;
+#nav-list li{
+    display:inline-block;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: white;
+#nav-head {
+    padding-left: 13px;
+    margin-left: 60px;
+    margin-right:60px;
+    font-size: 1.15em;
 }
 
-.navbar-default .navbar-brand {
-    color: white;
+#nav-head a {
+    padding: 2px 6px 2px 6px;
+    border: .2px solid white;
 }
 
-.navbar-default .navbar-brand:hover {
-    color: white;
+.nav-item {
+    margin: 0 20px 0 20px;
+}
+
+#nav-list li a {
+     color: white;
+     -webkit-transition: color .25s; /* Safari */
+    transition: color .25s;
+}
+
+#nav-list .nav-item a:hover {
+     text-decoration:none;
+     color: gray;
+}
+
+#nav-list li a:visited {
+     text-decoration:none;
+}
+
+#nav-list li a:active {
+     text-decoration:none;
+}
+
+#nav-list li a:link {
+     text-decoration:none;
+}
+
+#nav-list .active {
+    color: grey !important;
 }
