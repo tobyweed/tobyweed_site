@@ -6,10 +6,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/avenir"></link>
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Source+Sans+Pro:200,300,400" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 
     <script>
         function scrollLinks(){
@@ -33,57 +36,59 @@
                   });
                 }
           });
-          
-          var topNav = $(".navbar-fixed-top"),
-              topNavHeight = topNav.outerHeight()+15
               
           $(window).scroll(function(){
-            // Get container scroll position
-            var fromTop = $(window).scrollTop()+topNavHeight,
-            navItems = topNav.find("a"),
-            about = $("#about").offset().top,
-            projects = $("#projects").offset().top,
-            essays = $("#essays").offset().top;
-              
-            if(fromTop <= about){
-                $(navItems).addClass("active");
-            } else if(fromTop >= about) {
-                $(navItems).removeClass("active");
-                if(fromTop >= about && fromTop <= projects) {
-                    $('a[href="#about"]').addClass("active");
-                } else if (fromTop >= projects && fromTop <= essays) {
-                    $('a[href="#projects"]').addClass("active");
-                } else if (fromTop >= essays && fromTop <= essays + 500) {
-                    $('a[href="#essays"]').addClass("active");
+                var fromTop = $(window).scrollTop(),
+                    navItems = $(".navbar").find("a"),
+                    navHead = $("#switch").offset().top,
+                    about = $("#about").offset().top,
+                    resume = $("#resume").offset().top,
+                    contact = $("#contact").offset().top;
+                    
+                if (fromTop >= navHead) {
+                    $(".navbar").addClass("navbar-sticky");
+                    $(".navbar").removeClass("navbar-bottom");
                 } else {
-                    $('a[href="#contact"]').addClass("active");
+                    $(".navbar").removeClass("navbar-sticky");
+                    $(".navbar").addClass("navbar-bottom");
                 }
-            }
-          });
+                
+                $(navItems).removeClass("active");
+                
+                if(fromTop >= about) { 
+                    if(fromTop >= about-100 && fromTop < resume-100) {
+                        $('a[href="#about"]').addClass("active");
+                    } else if (fromTop >= resume-100 && fromTop < contact-100) {
+                        $('a[href="#resume"]').addClass("active");
+                    }   else if (fromTop >= contact-100) {
+                        $('a[href="#contact"]').addClass("active");
+                    }
+                }
+            });
           
-          
-          $(".nav-item").hover(function(){
-              if($(window).scrollTop()+topNavHeight <= $("#about").offset().top){
-                  $(".nav-item").toggleClass("active");
-              }
-          })
+            $("#bio").hover(function(){
+                    $("#about-text").fadeOut(1, function(){
+                        $("#bio-text").fadeIn(1);
+                    })
+                }, function(){ 
+                    $("#bio-text").fadeOut(1, function(){
+                        $("#about-text").fadeIn(1);
+                    });
+                }
+            );
+            
+            $("#values").hover(function(){
+                    $("#about-text").fadeOut(1, function(){
+                        $("#values-text").fadeIn(1);
+                    })
+                }, function(){ 
+                    $("#values-text").fadeOut(1, function(){
+                        $("#about-text").fadeIn(1);
+                    });
+                }
+            );
         }
     </script>
 </head>
 <body onLoad="scrollLinks()">
     
-        <nav class="navbar navbar-fixed-top navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#landing">Toby Weed</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about" class="nav-item">About</a></li>
-                        <li><a href="#projects" class="nav-item">Projects</a></li>
-                        <li><a href="#essays" class="nav-item">Essays</a></li>
-                        <li><a href="#contact" class="nav-item">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>

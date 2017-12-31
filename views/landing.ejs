@@ -3,22 +3,35 @@
 <div id="landing" class="background-image">
     <div class="layer">
         <div class="content">
-            <h1>DISCOVERY, CONSCIENCE, AMBITION</h1>
-            <h5><em>I believe that curiousity is fundamentally good, that the natural world is sacred, and that individuals' decisions impact the quality of the future.</em></h5>
-        
+            <hr id="spacer"></hr>
+            <hr id="switch"></hr>
+            <div class="navbar navbar-bottom">
+                <ul id="nav-list">
+                    <li class="nav-item"><a href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a href="#resume">RESUME</a></li>
+                    <li id="nav-head"><a href="/">TOBY WEED</a></li>
+                    <li class="nav-item"><a href="#essays">ESSAYS</a></li>
+                    <li class="nav-item"><a href="#projects">PROJECTS</a></li>
+                </ul>
+            </div>
             <a class="button circular" href="#about"><span class="glyphicon glyphicon-menu-down"></span></a>
         </div>
         
         <div class="sub">
-            <% include partials/minis/miniabout.ejs %>
+            <% include partials/about.ejs %>
         </div>
         
-        <div class="sub">
-            <% include partials/minis/miniprojects.ejs %>
-        </div>
+        <div id="div1" class="divider background-image"><div class="layer"></div></div>
         
         <div class="sub">
-            <% include partials/minis/miniessays.ejs %>
+            <div id="contactme">
+                <div class="contactme-content">
+                    <h1>Contact Me</h1>
+                    <hr>
+                    
+                    
+                </div>
+            </div>
         </div>
         
         <div class="sub">
