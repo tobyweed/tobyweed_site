@@ -3,6 +3,10 @@ body {
     font-weight: 200;
 }
 
+body ul {
+    list-style: none;
+}
+
 body h1 {
     font-weight: 200;
 }
@@ -203,36 +207,56 @@ h1{
     display: none;
 }
 
+#about #vision-text {
+    display: none;
+}
+
 #about .about-text {
     margin-left: 200px;
 }
 
 /*============================================== contact =================================================*/
 
-#contactme {
-    height:700px;
+#resume {
+    height:1000px;
     background-color: rgba(190,190,190,.95);
     text-align: left;
     padding-top:80px;
 }
 
-#contactme h1{
+#resume h1{
     font-size: 2.8em;
     text-align: left;
     margin-left: 20px;
 }
 
-#contactme hr {
+#resume hr {
     width: 76vw;
     margin-left:0;
     border: solid rgba(100,100,100,.6) .7px;
 }
 
-#contactme .contactme-content {
+#resume ul {
+    margin-left: 20px;
+}
+
+#resume b {
+    color: grey;
+}
+
+#resume strong {
+    color: black;
+}
+
+#resume span {
+    color: grey;
+}
+
+#resume .resume-content {
     float: left;
 }
 
-#contactme div {
+#resume div {
     float: left;
 }
 
@@ -245,6 +269,15 @@ h1{
 	
 	font-family: "avenir", sans-serif;
 }
+
+#resume #skills {
+    width: 113px;
+}
+
+#resume #experience {
+    width: 95%;
+}
+
 
 /*============================================== THUMBNAIL GALLERIES =================================================*/
 
@@ -356,6 +389,54 @@ a:hover{
 .fa {
     margin: 0 10px 0 10px;
 }
+
+/*============================================== ESSAYS ==================================================*/
+
+#essays {
+    height: 100%;
+    top:0;
+    background-image: url("/mountain.JPG");
+    background-position: 50% 25%;
+    text-align: center;
+    color: black;
+}
+
+#essays .head-banner {
+    height: 100vh;
+}
+
+#essays .content {
+    height: 100vh;
+    position:relative;
+}
+
+#essays .content h5 {
+    font-size: 1.2em;
+    /*color:rgba(255,255,255,.7);*/
+}
+
+#essays .circular:hover  {
+    background-color: white;
+    color: rgba(0,0,0,0);
+}
+
+#essays .circular:link, .circular:visited{
+    position: absolute;
+    bottom: 0;
+    
+    border-radius:50%;
+    height: 50px;
+    width: 50px;
+    display:inline-block;
+    padding-top: 13.5px;
+    font-size: 1.3em;
+    margin: 0 0 13vh -1.9%;
+    
+    
+    color: white;
+    border: solid white 1px;
+}
+
 
 /*======================================================== NAVBAR ========================================================*/
 

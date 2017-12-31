@@ -3,17 +3,7 @@
 <div id="landing" class="background-image">
     <div class="layer">
         <div class="content">
-            <hr id="spacer"></hr>
-            <hr id="switch"></hr>
-            <div class="navbar navbar-bottom">
-                <ul id="nav-list">
-                    <li class="nav-item"><a href="#about">ABOUT</a></li>
-                    <li class="nav-item"><a href="#resume">RESUME</a></li>
-                    <li id="nav-head"><a href="/">TOBY WEED</a></li>
-                    <li class="nav-item"><a href="#essays">ESSAYS</a></li>
-                    <li class="nav-item"><a href="#projects">PROJECTS</a></li>
-                </ul>
-            </div>
+            <% include partials/navbar.ejs %>
             <a class="button circular" href="#about"><span class="glyphicon glyphicon-menu-down"></span></a>
         </div>
         
@@ -21,17 +11,8 @@
             <% include partials/about.ejs %>
         </div>
         
-        <div id="div1" class="divider background-image"><div class="layer"></div></div>
-        
         <div class="sub">
-            <div id="contactme">
-                <div class="contactme-content">
-                    <h1>Contact Me</h1>
-                    <hr>
-                    
-                    
-                </div>
-            </div>
+            <% include partials/resume.ejs %>
         </div>
         
         <div class="sub">
