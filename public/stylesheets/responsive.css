@@ -1,0 +1,60 @@
+@media only screen and (max-width: 768px) {
+    
+    body{
+        font-size: 1.5em;
+    }
+    
+    body h1 {
+        font-size: 2em;
+    }
+    
+    .navbar {
+        width: 100vw;
+    }
+    
+    .navbar #nav-list .nav-item {
+        display: none;
+    }
+    
+    #landing .circular:link {
+        margin: 0 0 13vh -6.5%;
+    }
+    
+    #about {
+        text-align: center;
+    }
+    
+    #about hr {
+        width: 95%;
+    }
+    
+    #about .id-box {
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        float: none;
+        margin-bottom: 40px
+    }
+    
+    #about .about-text {
+        max-width: 100vw;
+    }
+    
+    #about .about-text h4 {
+        max-width: 100%;
+    }
+    
+    
+    #contact .location {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+    #resume #resume-btn {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 60px;
+    }
+}

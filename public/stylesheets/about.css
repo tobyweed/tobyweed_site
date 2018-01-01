@@ -1,0 +1,94 @@
+/*======================================================== ABOUT ========================================================*/
+
+#about {
+    text-align: center;
+    color: black;
+    background-color: rgba(246,246,246,.95);
+    padding-bottom: 63px;
+    padding-top: 90px;
+}
+
+#about .content {
+    margin: 0 40px 0 40px;
+}
+
+/*ID BOX*/
+
+.id-box {
+    float: left;
+    width: 210px;
+    margin-right: 20px;
+}
+
+#portrait {
+    border-radius:50%;
+    border: solid black 1px;
+    height: 170px;
+    width: 170px;
+    background-clip: padding-box;
+    background-size: cover;
+    background-position: center center;
+    
+    display:inline-block;
+    margin-bottom: 20px;
+}
+
+#about hr {
+    border: solid black .7px;
+}
+
+#about h1 {
+    font-weight: 400;
+    /*font-family: 'Avenir', sans-serif;*/
+}
+
+#about h5 {
+    margin-bottom: 65px;
+    margin-top: 25px;
+}
+
+#about h6 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#about p {
+    text-align: left;
+    padding: 0px;
+    margin: 0;
+}
+
+#about .id-box {
+    border-right: solid black 1px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#about .about-content {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+#about h4 {
+    text-align: left;
+    margin-bottom: 65px;
+    font-size: 2em;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    /*color:rgba(255,255,255,.7);*/
+    line-height: 1.6;
+}
+
+#about #bio-text {
+    display: none;
+}
+
+#about #values-text {
+    display: none;
+}
+
+#about #vision-text {
+    display: none;
+}
