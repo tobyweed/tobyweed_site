@@ -16,6 +16,10 @@
         display: none;
     }
     
+    #landing {
+        background-attachment: scroll;
+    }
+    
     #landing .circular:link {
         margin: 0 0 13vh -6.5%;
     }

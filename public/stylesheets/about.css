@@ -39,12 +39,23 @@
 
 #about h1 {
     font-weight: 400;
-    /*font-family: 'Avenir', sans-serif;*/
+}
+
+#about h4 {
+    text-align: left;
+    margin-bottom: 65px;
+    font-size: 2em;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    line-height: 1.6;
 }
 
 #about h5 {
-    margin-bottom: 65px;
-    margin-top: 25px;
+    text-align:left;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: black;
 }
 
 #about h6 {
@@ -57,6 +68,8 @@
     text-align: left;
     padding: 0px;
     margin: 0;
+    
+    font-size: 1.1em;
 }
 
 #about .id-box {
@@ -70,25 +83,21 @@
     display: inline-block;
 }
 
-#about h4 {
-    text-align: left;
-    margin-bottom: 65px;
-    font-size: 2em;
-    max-width: 100%;
-    margin: 0 auto;
-    
-    /*color:rgba(255,255,255,.7);*/
-    line-height: 1.6;
-}
-
 #about #bio-text {
     display: none;
 }
 
 #about #values-text {
     display: none;
+    font-size: .9em
 }
 
-#about #vision-text {
-    display: none;
+#about #values-text b {
+    font-weight: 300;
+    color: rgb(150,150,150);
+}
+
+#about .active {
+    color: white;
+    background-color: black;
 }

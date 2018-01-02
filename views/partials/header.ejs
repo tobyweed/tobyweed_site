@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/about.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/contact.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/essays.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/projects.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/resume.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css">
@@ -73,28 +74,31 @@
                     }
                 }
             });
-          
-            $("#bio").hover(function(){
-                    $("#about-text").fadeOut(1, function(){
-                        $("#bio-text").fadeIn(1);
-                    })
-                }, function(){ 
-                    $("#bio-text").fadeOut(1, function(){
-                        $("#about-text").fadeIn(1);
-                    });
-                }
-            );
             
-            $("#values").hover(function(){
-                    $("#about-text").fadeOut(1, function(){
-                        $("#values-text").fadeIn(1);
-                    })
-                }, function(){ 
-                    $("#values-text").fadeOut(1, function(){
-                        $("#about-text").fadeIn(1);
-                    });
-                }
-            );
+            $("#intro").click(function(){
+                $(".about-text").fadeOut(100)
+                $("#intro-text").fadeIn(500);
+                
+                $(".about-btn").removeClass("active");
+                $(this).addClass("active")
+            });
+          
+            $("#bio").click(function(){
+                $(".about-text").fadeOut(100)
+                $("#bio-text").fadeIn(500);
+                
+                $(".about-btn").removeClass("active");
+                $(this).addClass("active");
+            });
+            
+            $("#values").click(function(){
+                $(".about-text").fadeOut(100)
+                $("#values-text").fadeIn(500);
+                
+                $(".about-btn").removeClass("active");
+                $(this).addClass("active");
+            });
+
         }
     </script>
 </head>

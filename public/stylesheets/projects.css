@@ -1,39 +1,39 @@
-/*============================================== ESSAYS ==================================================*/
+/*============================================== projects ==================================================*/
 
-#essays {
+#projects {
     height: 100%;
     top:0;
-    background-image: url("/mountain.JPG");
+    background-image: url("/gardenart.JPG");
     background-position: 50% 25%;
     text-align: center;
     color: black;
 }
 
-#essays h1 {
+#projects h1 {
     color: white;
     margin-top: 26vh;
 }
 
-#essays .head-banner {
+#projects .head-banner {
     height: 100vh;
 }
 
-#essays .content {
+#projects .content {
     height: 100vh;
     position:relative;
 }
 
-#essays .content h5 {
+#projects .content h5 {
     font-size: 1.2em;
     /*color:rgba(255,255,255,.7);*/
 }
 
-#essays .circular:hover  {
+#projects .circular:hover  {
     background-color: white;
     color: rgba(0,0,0,0);
 }
 
-#essays .circular:link, .circular:visited{
+#projects .circular:link, .circular:visited{
     position: absolute;
     bottom: 0;
     
