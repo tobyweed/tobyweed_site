@@ -16,8 +16,9 @@
         display: none;
     }
     
-    #landing {
-        background-attachment: scroll;
+    #landing .content{
+        background-image: url("mountain.JPG");
+        background-position: right;
     }
     
     #landing .circular:link {
