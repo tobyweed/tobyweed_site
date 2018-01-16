@@ -6,6 +6,10 @@
     margin-top: 80px;
 }
 
+#contact .container {
+    padding-top: 100px;
+}
+
 #contact hr {
     margin-top: 0;
 }

@@ -44,7 +44,7 @@
                     window.location.hash = hash;
                   });
                 }
-          });
+            });
               
           $(window).scroll(function(){
                 var fromTop = $(window).scrollTop(),
@@ -52,6 +52,7 @@
                     navHead = $("#switch").offset().top,
                     about = $("#about").offset().top,
                     resume = $("#resume").offset().top,
+                    projects = $("#projects").offset().top,
                     contact = $("#contact").offset().top;
                     
                 if (fromTop >= navHead) {
@@ -67,9 +68,11 @@
                 if(fromTop >= about) { 
                     if(fromTop >= about-100 && fromTop < resume-100) {
                         $('a[href="#about"]').addClass("active");
-                    } else if (fromTop >= resume-100 && fromTop < contact-100) {
+                    } else if (fromTop >= resume-100 && fromTop < projects-100) {
                         $('a[href="#resume"]').addClass("active");
-                    }   else if (fromTop >= contact-100) {
+                    } else if (fromTop >= projects-100 && fromTop < projects+450) {
+                        $('a[href="#projects"]').addClass("active");
+                    } else if (fromTop >= projects+450) {
                         $('a[href="#contact"]').addClass("active");
                     }
                 }
