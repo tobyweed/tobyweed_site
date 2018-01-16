@@ -17,8 +17,19 @@
     }
     
     #landing .content{
-        background-image: url("mountain.JPG");
-        background-position: right;
+        background-image: url("/car.JPG");
+        background-attachment: scroll;
+        background-position: 50% 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #landing #contact{
+        background-image: url("/mountain.JPG");
+        background-attachment: scroll;
+        background-position: 50% 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     #landing .circular:link {
