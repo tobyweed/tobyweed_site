@@ -11,14 +11,6 @@ app.get("/",function(req,res){
     res.render("landing");
 })
 
-app.get("/projects",function(req,res){
-    res.render("projects");
-})
-
-app.get("/essays",function(req,res){
-    res.render("essays");
-})
-
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("server is listening");
 })

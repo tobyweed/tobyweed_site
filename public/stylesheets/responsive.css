@@ -16,8 +16,13 @@
         display: none;
     }
     
+    .resp-layer {
+        height:100%;
+        background-color: rgba(0,0,0,.35);
+    }
+    
     #landing .content{
-        background-image: url("/car.JPG");
+        background-image: url("/mountain.JPG");
         background-attachment: scroll;
         background-position: 50% 80%;
         background-repeat: no-repeat;
