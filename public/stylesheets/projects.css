@@ -18,6 +18,20 @@
     font-size: 1.2em;
 }
 
-#projects a:hover {
-    color: white !important;
+/*#projects a:hover {*/
+/*    color: white !important;*/
+/*}*/
+
+#projects .button {
+    border: solid white 1px;
+    color: white;
+}
+
+#projects .button:hover {
+    background-color: white;
+    color: black;
+}
+
+#projects .button:focus {
+    color: white;
 }
