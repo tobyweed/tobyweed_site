@@ -55,6 +55,13 @@
                     projects = $("#projects").offset().top,
                     contact = $("#contact").offset().top;
                     
+                    
+                //Add background color to the navbar if it's on the landing image & the dropdown is not hidden.
+                //Responsive. Patches the dropNav function
+                if(fromTop <= about && !$(".dropdown-content").is(":hidden")) {
+                    $(".navbar-bottom").addClass("colored");
+                }
+                    
                 if (fromTop >= navHead) {
                     $(".navbar").addClass("navbar-sticky");
                     $(".navbar").removeClass("navbar-bottom");
@@ -102,6 +109,15 @@
                 $(this).addClass("active");
             });
 
+        }
+        
+        function dropNav() {
+            $(".dropdown-content").slideToggle(250, "linear");
+            if(!$(".navbar-bottom").hasClass("colored")){
+                $(".navbar-bottom").addClass("colored");
+            } else {
+                $(".navbar-bottom").removeClass("colored");
+            }
         }
     </script>
 </head>

@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
     
     body{
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
     
     body h1 {
@@ -24,13 +24,90 @@
         background-color: rgba(0,0,0,.35);
     }
     
+    /*DROPDOWN*/
     
+    .navbar-sticky {
+        text-align: center;
+    }
+    
+    .navbar-bottom {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        
+        background-color: rgba(20,20,20,0);
+    }
+    
+    .colored{
+        background-color: rgba(20,20,20,1);
+    }
+    
+    .navbar-bottom #nav-list {
+        position: static;
+        bottom: auto;
+    }
+    
+    #nav-list {
+        width: 100%;
+    }
+    
+    .navbar #nav-list #nav-head {
+        padding-right: 0;
+        border: 0;
+        margin: 0;
+    }
+    
+    .navbar #nav-list .nav-item {
+        display: none;
+    }
+    
+    
+    .navbar #nav-list .dropdown {
+        display: inline-block;
+        margin-left: 10px;
+        padding-top: 2px;
+    }
+    
+    .dropdown-content {
+        border-top: solid .2px white;
+    }
+    
+    .dropdown-content .drop-list {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 5px 0 5px 0;
+    }
+    
+    .dropdown-content .drop-item {
+        border-top: solid 1px rgba(150,150,150,.25);
+        margin: 2px 0 2px 0;
+    }
+    
+    .dropdown-content .top {
+        border-top: none;
+    }
+    
+    .dropdown-content .drop-list .drop-item a {
+        color: rgb(200,200,200);
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .drop-item .active {
+        color: black !important;
+        background-color: rgba(255,255,255,1);
+    }
+
     
     
     /*LANDING*/
     
     #landing .content{
-        background-image: url("/mountain.JPG");
+        background-image: url("/pics/mountain.JPG");
         background-attachment: scroll;
         background-position: 50% 80%;
         background-repeat: no-repeat;
@@ -38,7 +115,7 @@
     }
     
     #landing #contact{
-        background-image: url("/mountain.JPG");
+        background-image: url("/pics/mountain.JPG");
         background-attachment: scroll;
         background-position: 50% 80%;
         background-repeat: no-repeat;
@@ -80,7 +157,7 @@
     
     
     /*PROJECTS*/
-    .thumb-layer:hover {
+    .thumb-layer {
         background-color: rgba(0,0,0,.45);
         opacity: 1;
         line-height:.15;

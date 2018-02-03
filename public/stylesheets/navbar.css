@@ -25,9 +25,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
   
-  background-color: rgba(20,20,20,.9);
+  background-color: rgba(20,20,20,1);
 }
 
 .navbar-bottom #nav-list .nav-item a:hover {
@@ -82,4 +81,13 @@
 
 #nav-list .active {
     color: grey !important;
+}
+
+/*DROPDOWN*/
+#nav-list .dropdown {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
 }

@@ -74,7 +74,7 @@ h1{
 #landing {
     height: 100%;
     top:0;
-    background-image: url("/mountain.JPG");
+    background-image: url("/pics/mountain.JPG");
     background-position: 50% 10%;
     text-align: center;
     color: black;
@@ -186,6 +186,6 @@ h1{
 
 .divider {
     height: 200px;
-    background-image: url("/car.JPG");
+    background-image: url("/pics/car.JPG");
     background-position: 50% 74%;
 }
