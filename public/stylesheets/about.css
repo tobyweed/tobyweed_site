@@ -26,8 +26,8 @@
     height: 170px;
     width: 170px;
     background-clip: padding-box;
-    background-size: cover;
-    background-position: center center;
+    background-size: 150%;
+    background-position: 50% 70%;
     
     display:inline-block;
     margin-bottom: 20px;

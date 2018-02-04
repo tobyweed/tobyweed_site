@@ -1,10 +1,9 @@
 /*============================================== projects ==================================================*/
 
 #projects {
-    background-color: rgba(70,70,70,1);
+    background-color: rgba(50,50,50,1);
     text-align: left;
     padding-top:80px;
-    padding-bottom: 120px;
     border-bottom: solid 1px white;
 }
 
@@ -13,11 +12,26 @@
     text-align: left;
     margin-left: 20px;
     color: white;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#projects hr {
+    width: 76vw;
+    margin-left:0;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border: solid white .56px;
 }
 
 #projects .content h5 {
     font-size: 1.2em;
 }
+
+#projects a:visited {
+    color: inherit;
+}
+
 
 #projects .button {
     border: solid white 1px;
