@@ -26,11 +26,17 @@
   top: 0;
   width: 100%;
   
-  background-color: rgba(20,20,20,1);
+  background-color: rgba(15,15,15,1);
+}
+
+.navbar-bottom {
+    position: fixed;
+     top: 0;
 }
 
 .navbar-bottom #nav-list .nav-item a:hover {
-     color: rgb(30,30,30);
+     color: rgb(0,0,0);
+     font-weight: 400;
 }
 
 #nav-list {
