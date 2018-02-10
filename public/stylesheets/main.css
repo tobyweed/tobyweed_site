@@ -40,7 +40,7 @@ body h5 {
 
 .layer {
     height:100%;
-    background-color: rgba(0,0,0,.45);
+    background-color: rgba(0,0,0,.65);
 }
 
 .resp-layer {
@@ -101,22 +101,28 @@ h1{
 
 #landing .content .logo-background {
     display: inline-block;
-    width: 450px;
-    background:rgba(10,10,10,.8);
+    width: 420px;
+    /*background:rgba(10,10,10,.8);*/
     height: 115px;
 }
 
 #landing .content .logo {
-    width: 450px;
+    width: 420px;
     height: 115px;
     overflow: hidden;
     
     color: white;
-    font-size: 1.35em;
+    font-size: 1em;
     
     display: inline-block;
+    padding: 10px 0 10px;
     margin: 0 auto;
-    /*border: solid 1px black;*/
+}
+
+#landing .content .logo h1 {
+    border: solid 2px white;
+    height: 75px;
+    padding: 5px 10px 5px 10px;
 }
 
 #landing .content h1 {
