@@ -73,13 +73,13 @@
                 $(navItems).removeClass("active");
                 
                 if(fromTop >= about) { 
-                    if(fromTop >= about-100 && fromTop < resume-100) {
+                    if(fromTop >= about-100 && fromTop < projects-100) {
                         $('a[href="#about"]').addClass("active");
-                    } else if (fromTop >= resume-100 && fromTop < projects-100) {
-                        $('a[href="#resume"]').addClass("active");
-                    } else if (fromTop >= projects-100 && fromTop < projects+450) {
+                    } else if (fromTop >= projects-100 && fromTop < resume-100) {
                         $('a[href="#projects"]').addClass("active");
-                    } else if (fromTop >= projects+450) {
+                    } else if (fromTop >= resume-100 && fromTop < contact-300) {
+                        $('a[href="#resume"]').addClass("active");
+                    } else if (fromTop >= contact-300) {
                         $('a[href="#contact"]').addClass("active");
                     }
                 }
