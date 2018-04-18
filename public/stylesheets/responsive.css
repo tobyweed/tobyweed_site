@@ -123,11 +123,20 @@
     }
     
     #landing .content .logo-background {
-        width: 100%;
+        width: 300px;
     }
     
     #landing .content .logo {
-        width: 100%;
+        width: 300px;
+        font-size: .75em;
+    }
+    
+    #landing .content .logo h1 {
+        height: 55px;
+    }
+    
+    #landing .content .logo p {
+        width: auto;
     }
     
     
