@@ -1,0 +1,193 @@
+@media only screen and (max-width: 768px) {
+    
+    body{
+        font-size: 1.25em;
+    }
+    
+    body h1 {
+        font-size: 2em;
+    }
+    
+    
+    /*NAVBAR*/
+    
+    .navbar {
+        width: 100vw;
+    }
+    
+    .navbar #nav-list .nav-item {
+        display: none;
+    }
+    
+    .resp-layer {
+        height:100%;
+        background-color: rgba(0,0,0,.65);
+    }
+    
+    /*DROPDOWN*/
+    
+    .navbar-sticky {
+        text-align: center;
+    }
+    
+    .navbar-bottom {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        
+        background-color: rgba(20,20,20,0);
+    }
+    
+    .colored{
+        background-color: rgba(20,20,20,1);
+    }
+    
+    .navbar-bottom #nav-list {
+        position: static;
+        bottom: auto;
+    }
+    
+    #nav-list {
+        width: 100%;
+    }
+    
+    .navbar #nav-list #nav-head {
+        padding-right: 0;
+        border: 0;
+        margin: 0;
+    }
+    
+    .navbar #nav-list .nav-item {
+        display: none;
+    }
+    
+    
+    .navbar #nav-list .dropdown {
+        display: inline-block;
+        margin-left: 10px;
+        padding-top: 2px;
+    }
+    
+    .dropdown-content {
+        border-top: solid .2px white;
+    }
+    
+    .dropdown-content .drop-list {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 5px 0 5px 0;
+    }
+    
+    .dropdown-content .drop-item {
+        border-top: solid 1px rgba(150,150,150,.25);
+        margin: 2px 0 2px 0;
+    }
+    
+    .dropdown-content .top {
+        border-top: none;
+    }
+    
+    .dropdown-content .drop-list .drop-item a {
+        color: rgb(200,200,200);
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .drop-item .active {
+        color: black !important;
+        background-color: rgba(255,255,255,1);
+    }
+
+    
+    
+    /*LANDING*/
+    
+    #landing .content{
+        background-image: url("/pics/mountain.JPG");
+        background-attachment: scroll;
+        background-position: 50% 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #landing #contact{
+        background-image: url("/pics/mountain.JPG");
+        background-attachment: scroll;
+        background-position: 50% 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #landing .content .logo-background {
+        width: 300px;
+    }
+    
+    #landing .content .logo {
+        width: 300px;
+        font-size: .75em;
+    }
+    
+    #landing .content .logo h1 {
+        height: 55px;
+    }
+    
+    #landing .content .logo p {
+        width: auto;
+    }
+    
+    
+    
+    
+    /*ABOUT*/
+    #about {
+        text-align: center;
+    }
+    
+    #about hr {
+        width: 95%;
+    }
+    
+    #about .id-box {
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        float: none;
+        margin-bottom: 40px
+    }
+    
+    #about .about-text {
+        max-width: 100vw;
+    }
+    
+    #about .about-text h4 {
+        max-width: 100%;
+    }
+    
+    
+    
+    /*PROJECTS*/
+    .thumb-layer {
+        background-color: rgba(0,0,0,.45);
+        opacity: 1;
+        line-height:.15;
+    }
+    
+    
+    /*CONTACT*/
+    #contact .location {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+    #resume #resume-btn {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 60px;
+    }
+}
